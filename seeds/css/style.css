@@ -1,0 +1,579 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+body{
+	width: 960px;
+	margin: auto;
+}
+
+.title{
+	background:url(../img/head.jpg);
+	background-position: right -90px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #fafafa;
+	text-shadow: #27668b 4px 0 10px;
+	;
+	}
+
+
+
+.title_text{
+	font-size: 64px;
+	font-family: 'Pinyon Script', cursive;
+	position: relative;
+	 
+	}
+
+/*タイトルの画像と説明を記載
+---------------------*/
+a{
+	color: #719560;
+}
+
+.menu{
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	font-size: 21px;
+	border-bottom:	3px solid #efefef;
+	background-position: center;
+	
+	
+}
+
+.menu img{
+	margin: auto;
+	height: 70%;
+}
+
+.menu_text{
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+	margin: auto;
+
+
+}
+/*navエリアを記載
+---------------------*/
+
+.about{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+		
+}
+
+
+h2{
+	font-size: 32px;
+	color: #719560;
+	margin-top: 100px;
+	margin-bottom:
+}
+
+.about_text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	line-height: 64px;
+	margin-bottom: 40px;
+}
+/*aboutのテキスト*/
+.ats{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	}
+
+	/*aboutのテキスト
+---------------------*/
+.bbb{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+/*
+---------------------*/
+
+.img_box{
+	width: 960px;
+}
+
+.img_four{
+	display: flex;
+	width:960px;
+	margin-top: 50px;
+	margin-bottom: 64px;	
+}
+
+/* カルーセル全体 */
+.carousel {
+	/* 水平方向中央寄せ */
+	display: flex;
+	justify-content: center;
+  }
+  /* カルーセル内容 */
+  .contains {
+	/* サイズは自由に変更してください。*/
+	/* 下の.slideも同じサイズにしてください。 */
+	width: 960px;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	padding: 0;
+	list-style: none;
+	
+  }
+
+  .carousel_1 img{
+	width: 100%;
+	height: 100%;
+	object-position: 0 -60px;
+  }
+
+  .carousel_2 img{
+	width: 100%;
+	height: 100%;
+	object-position: 0	--40px;
+  }
+
+  .carousel_3 img{
+	width: 100%;
+	height: 100%;
+	object-position: 0 -100px;
+  }
+
+  .carousel_4 img{
+	width: 100%;
+	height: 100%;
+	object-position: 0 ;
+  }
+
+  /* スライド切り換え用ラジオボタンは常に非表示 */
+  .slide_select {
+	display: none;
+  }
+  /* 各スライド */
+  .slide {
+	/* サイズは自由に変更してください。*/
+	/* 上の.containsも同じサイズにしてください。 */
+	width: 960px;
+	height: 300px;
+	position: absolute;
+	/* スライドの初期値は選択されていないので透明にしておく */
+	opacity: 0;
+  }
+  /* 前へ次へボタン */
+  .scroll_button {
+	position: absolute;
+	display: block;
+	height: 30px;
+	width: 30px;
+	/* 縦中央から20px上の位置 */
+	top: 50%;
+	margin-top: -20px;
+  /* 上辺と右辺のみ幅5pxの枠線 */
+	border-width: 5px 5px 0 0;
+	border-style: solid;
+	border-color: #fdfdfd;
+	cursor: pointer;
+	/* 普段はボタンはやや薄くする */
+	opacity: 0.5;
+	/* スライドよりも前面にする */
+	z-index: 3;
+  }
+  /* ホバー時にボタンを強調 */
+  .scroll_button:hover {
+	opacity: 1;
+  }
+  /* 前へボタン */
+  .scroll_prev {
+	left: 15px;
+	/* 上辺と右辺の枠線を回転して"＜"にする */
+	transform: rotate(-135deg);
+  }
+  /* 次へボタン */
+  .scroll_next {
+	right: 15px;
+	/* 上辺と右辺の枠線を回転して"＞"にする */
+	transform: rotate(45deg);
+  }
+  /* スライド移動ボタンエリア */
+  .move_controler {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+  }
+  /* スライド移動の各ボタン */
+  .button_move {
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	border-radius: 100%;
+	cursor: pointer;
+	/* 普段はやや薄くする */
+	opacity: 0.5;
+	/* スライドより前面にする */
+	z-index: 2;
+  }
+  /* ホバー時はやや明るくする */
+  .button_move:hover {
+	opacity: 0.75;
+  }
+  /* スライド移動ボタンの色 */
+  .button_move {
+	background-color: #fdfdfd;
+  }
+  /* 1番目のスライド選択時 */
+  /* 1番目のスライドの透明度を0にして表示する */
+  .slide_select:nth-of-type(1):checked ~ .slide:nth-of-type(1) {
+	opacity: 1;
+  }
+  /* スライド移動ボタンの1個目を明るくする */
+  /* （今選択されていることが分かるように） */
+  .slide_select:nth-of-type(1):checked ~ .move_controler .button_move:nth-of-type(1) {
+	opacity: 1;
+  }
+  .slide_select:nth-of-type(2):checked ~ .slide:nth-of-type(2) {
+	opacity: 1;
+  }
+  .slide_select:nth-of-type(2):checked ~ .move_controler .button_move:nth-of-type(2) {
+	opacity: 1;
+  }
+  .slide_select:nth-of-type(3):checked ~ .slide:nth-of-type(3) {
+	opacity: 1;
+  }
+  .slide_select:nth-of-type(3):checked ~ .move_controler
+	.button_move:nth-of-type(3) {
+	opacity: 1;
+  }
+  .slide_select:nth-of-type(4):checked ~ .slide:nth-of-type(4) {
+	opacity: 1;
+  }
+  .slide_select:nth-of-type(4):checked
+	~ .move_controler
+	.button_move:nth-of-type(4) {
+	opacity: 1;
+  }
+
+
+/*
+---------------------*/
+
+
+h3{
+	font-size: 24px #719560;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	}
+
+.course_concept{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	margin-bottom: 60px;
+}
+
+
+
+.course_box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #719560;
+}
+
+.course_img{
+	width:480px	
+}
+
+.course_img img{
+	width: 100%;
+}
+
+.course_text{
+	width: 480px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.course_text div{
+	width: 80%;
+	}
+
+h4{
+	margin-bottom: 40px;
+	font-size: 24px;
+}
+.course_text_2{
+	width: 480px;
+}
+.course_textt{
+	width: 80%;
+	margin-left: 48px;
+}
+
+.news_text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 64px;
+	margin-bottom: 10px;
+}
+
+
+h5{
+	font-size: 32px;
+	color: #719560;
+	
+	}
+
+.news_box{
+	width: 100%;
+	display:flex;
+	justify-content:space-between;
+			}
+
+.news_img_1,.news_img_2,.news_img_3{
+	width: 300px;
+
+}
+
+.news_img_2 img,.news_img_3 img{
+	width: 100%;
+}
+
+.news_box p{
+	width: 85%;
+	
+}
+
+.button{
+	font-size: 21px;
+	background-color: #719560;
+	color: #efefef;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 60px;	
+	margin: auto;
+}
+
+.access_box{
+	background-color: #fafafa;
+	padding-top: 32px;
+	padding-bottom: 80px;
+
+}
+
+.access_title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+		margin-top: 32px;
+	margin-bottom: 32px;
+	color: #719560;
+}
+
+h6{
+	font-size: 24px;
+	margin-bottom: 24px;
+	color: #719560;
+}
+
+
+.map{
+	width:100%;
+}
+
+.map iframe{
+	width:100%;
+}
+
+.info_box{
+	display: flex;
+	margin-top: 64px;
+
+
+}
+
+
+.info{
+	width: 50%;
+	display: flex;
+	justify-content:center;
+	align-items: end;
+	flex-direction: column;
+	padding-right: 48px;
+}
+
+.info_text{
+	width: 50%;
+	display: flex;
+	justify-content:center;
+	align-items: right;
+	flex-direction: column;
+}
+
+.contact_box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 64px;
+}
+
+.contact_text{
+	margin-top: 60px;
+	margin-bottom: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.contact_notice{
+	margin-bottom: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+
+
+
+input[type="text"]{
+	border:solid 2px #719560;
+	width: 328px;
+	height: 36px;
+	margin-left: 200px;
+	margin-bottom: 24px;
+}
+input[type="email"]{
+	border:solid 2px #719560;
+	width: 328px;
+	height: 36px;
+	margin-bottom: 24px;
+	margin-left: 120px;
+}
+
+.checkbox_box{
+	display: flex;
+}
+
+.checkbox_title{
+	width: 460px;
+	display: flex;
+	justify-content: center;
+	padding-left: 30px;
+	line-height: 48px;
+}
+
+.checkbox_field{
+	width: 570px;
+	line-height: 45px;
+}
+
+.syousai{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 24px;
+}
+
+input[type="submit"]{
+	border: solid 2px #719560;
+	border-radius: 10%;
+	background-color: #719560;
+	color: white;
+	font-size: 18px;
+	width: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button{
+	margin-top: 60px;
+}
+
+.cr{
+	font-size: 18px;
+	background-color: #719560;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 200px;
+	color: #fafafa;
+}
+
+
+.pagetop {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background: #fff;
+    border: solid 2px #719560;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.pagetop__arrow {
+    height: 10px;
+    width: 10px;
+    border-top: 3px solid #719560;
+    border-right: 3px solid #719560;
+    transform: translateY(20%) rotate(-45deg);
+}

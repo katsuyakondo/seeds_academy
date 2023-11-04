@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>シーズアカデミー</title>
+    <meta name="description" content=“世界を変えるチーズを作ろう。チーズアカデミーは、チーズ職人を養成するための学校です。”>
+    <meta property="og:title" content="チーズアカデミー">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta property="og:site_name" content="チーズアカデミー" />
+    <meta property="og:description" content="世界を変えるチーズを作ろう。チーズアカデミーは、チーズ職人を養成するための学校です。" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="img/seeds.png" type="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="canonical" href="#">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/sanitize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- あらかじめcssを読み込んでいるので設定しなくてOK-->
+</head>
+
+<body>
+<div class="title">
+    <h1 class="title_text">Ideas are infinite possibles</h1>
+    <p></p>
+  
+    
+</div>
+
+<div class="menu">
+     <img src="./img/logo.png" alt="logo">
+        <div class="menu_text">
+        <a href="#about">about</a>
+        <a href="#member">member</a>
+        <a href="#course">course</a>
+        <a href="#news">news</a>
+        <a href="#access">access</a>
+        <a href="#contact">contact</a>
+        </div>
+</div>
+
+<div class="about">
+    <h2 name="about">about</h2>
+    <div class="about_text">
+        <p>シーズアカデミーは，あなたのアイデアを事業化するコンサルタントです。</p>
+        <p>私達はあなたが持っているアイデアを「種（seeds）」と呼んでいます。</p>
+        <p>そのシーズは大きな可能性を秘めているにも関わらずなかなか花を咲かせることはありません。</p>
+    </div>
+        <div class="ats">
+               <p>それはなぜか</p>
+        </div>    
+            <div class="bbb">
+            <p>それは花を咲かせるまでにはたくさん資金や時間、そしてノウハウを持ち合わせていないからです。</p>
+            <br>
+            <p>そのシーズをシーズのままにしておくのはもったいない</p>
+            <p>１つでも多くの花を咲かせたい</p>
+           <br>
+            <p>そんな思いから，シーズアカデミーは歩みを始めています．</p>
+         </div>
+         <br>
+    <p>ぜひ、あなたのアイデアを私達にぶつけてみてください！</p>
+    
+
+    <h2><a name="member">member</h2></a>
+    <div class="img_four">
+        
+        <div class="carousel">
+        <!-- スライドのリスト -->
+        <div class="contains">
+          <!-- スライドを選択するためのラジオボタンリスト。 -->
+          <!-- 数は増減しても構わないです。 最初は1番目を選択状態(checked)にします。-->
+          <!-- Slide各ラジオボタンに個別のidを定義して、nameはすべて同じ値にします。 -->
+          <input class="slide_select" type="radio" id="SlideA" name="slide_check" checked />
+          <input class="slide_select" type="radio" id="SlideB" name="slide_check" />
+          <input class="slide_select" type="radio" id="SlideC" name="slide_check" />
+          <input class="slide_select" type="radio" id="SlideD" name="slide_check" />
+          <!-- スライド -->
+          <!-- 上のラジオボックスと同じ数だけ記述します。-->
+          <div class="slide">
+            <!-- スライドの前へ、次へとスクロールさせるボタン -->
+            <div class="scroll_controler">
+              <!-- 前へボタン forで戻る先のラジオボタンのidを書きます。-->
+              <!-- 先頭要素なので、最後のスライドのidである"SlideD"を書いています。 -->
+              <label class="scroll_button scroll_prev" for="SlideD"></label>
+              <!-- 次へボタン 上と同様にforで進む先のラジオボタンのidを書きます。-->
+              <!-- 進み先は2番目の要素なので、2番目のスライドのid"SlideB"を書いています。 -->
+              <label class="scroll_button scroll_next" for="SlideB"></label>
+            </div>
+            <!-- スライドの内容（ここでは画像）を記述します。 -->
+            <!-- div要素に変えれば文字を加えることもできます。 -->
+              <div class="carousel_1">
+            <img src="img/カルーセル①.jpg">
+           
+        </div>
+          </div>
+          <!-- スライド（2番目）内容は1個めと同じ -->
+          <div class="slide">
+            <div class="controler_scroll">
+              <label class="scroll_button scroll_prev" for="SlideA"></label>
+              <label class="scroll_button scroll_next" for="SlideC"></label>
+            </div>
+            <div class="carousel_2">
+            <img src="img/カルーセル.png">
+        </div>  
+        </div>
+          <!-- スライド（3番目）内容は1個めと同じ -->
+          <div class="slide">
+            <div class="controler_scroll">
+              <label class="scroll_button scroll_prev" for="SlideB"></label>
+              <label class="scroll_button scroll_next" for="SlideD"></label>
+            </div>
+            <div class="carousel_3">
+            <img src="img/カルーセル.jpg">
+        </div>   
+        </div>
+          <!-- スライド（4番目）内容は1個めと同じ -->
+          <div class="slide">
+            <div class="controler_scroll">
+              <label class="scroll_button scroll_prev" for="SlideC"></label>
+              <label class="scroll_button scroll_next" for="SlideA"></label>
+            </div>
+            <div class="carousel_4">
+            <img src="img/カルーセル5.jpg">
+            </div>
+        </div>
+          <!-- スライド移動用ボタン -->
+          <div class="move_controler">
+            <!-- 1個目のスライドのボタン -->
+            <!-- 一番上のラジオボタンの1個目のスライドのid”A”をforに定義します-->
+            <label class="button_move" for="SlideA"></label>
+            <label class="button_move" for="SlideB"></label>
+            <label class="button_move" for="SlideC"></label>
+            <label class="button_move" for="SlideD"></label>
+          </div>
+        </div>
+      </div>
+   
+    </div>
+</div>
+
+<div class="course">
+    <h3><a name="course">COURSE</h3></a>
+    <div class="course_concept">
+        <p>どのプランも最初に一切費用はかかりませんが厳正なる審査がございます。</p>
+        <p>費用は完全成功報酬です。</p>
+        </div>
+</div>
+
+<div class="course_box">
+    <div class="course_img">
+        <img src="./img/bannsou.jpg" alt="">
+    </div>
+     <div class="course_text">
+            <div>
+                <h4>事業化プラン</h4>
+                <p>あなたが代表となり、それに弊社が伴奏して事業化に向けてアクションプランを立て実行していきます。</p>
+                <p>費用：売上高の30%</p>
+            </div>
+     </div>    
+</div>
+
+<div class="course_box">  
+    <div class="course_text_2">
+        <div class="course_textt">
+            <h4>ファンディングプラン</h4>
+            <p>我々が資金援助のみを行います。</p>
+            <p>費用：資金援助した金額＋売上高の10%</p>
+        </div>  
+    </div>    
+    <div class="course_img">
+        <img src="./img/fanding.png" alt="">
+    </div>
+</div>
+
+<div class="course_box">
+    <div class="course_img">
+        <img src="./img/kaitori.jpg" alt="">
+    </div>
+        <div class="course_text">
+            <div>
+            <h4>アイセール(IdeaSale)プラン</h4>
+            <p>あなたのアイデアを我々が買い取ります。</p>
+            <p>費用：なし</p>
+            </div>
+        </div>    
+</div>
+
+
+<div class="news_text">
+    <h5><a name="news">NEWS</h5></a>
+  
+</div>
+
+<div class="news_box">
+    <div class="news_img_1">
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/kinXogcqcd4?si=WaIdo9yTJ0nbuxLz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p>2023/10/27</p>
+        <p>シーズアカデミー5周年記念パーティーの様子を公開！</p>
+    </div>
+    <div class="news_img_2">
+        <img src="img/hudeyosi.jpg" alt="">
+        <p>2023/3/4</p>
+        <p>シーズアカデミーファンディングプランで500万円の融資を受けた豊臣さんのコメント掲載中！</p>
+    </div>
+    <div class="news_img_3">
+        <img src="img/ieyasu.jpg" alt="">
+        <p>2022/12/28</p>
+        <p>シーズアカデミー事業化プランで初めて市場した「(株)江戸幕府」のCEO徳川様にインタビューをしました！</p>
+    </div>
+</div>
+
+<div class="button">
+    <button name="button">More</button>
+</div>
+
+<div class="access_box">
+    <div class="access_title">
+        <h6><a name="access">ACCESS</h6></a>
+        
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d329.7566977357591!2d130.42708888771224!3d33.58612027238955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354191b5f35cf727%3A0x14805f0713ca632d!2z44CSODEyLTAwMTMg56aP5bKh55yM56aP5bKh5biC5Y2a5aSa5Yy65Y2a5aSa6aeF5p2x77yT5LiB55uu77yR77ySIOWxseeOi-ODk-ODqw!5e0!3m2!1sja!2sjp!4v1697986549178!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+<div class="info_box">
+      <div class="info">
+            <p>学校名</p>
+            <p>事務所所在地</p>
+            <br>
+            <p>TEL</p>
+            <p>FAX</p>
+            <p>MAIL</p>
+        </div>
+    <div class="info_text">
+            <p>シーズアカデミー</p>
+            <p>〒810-0013 福岡県福岡市博多区博多駅東3-12-12 LELION KAWAKAMI804</p>
+            <p>000-000-0000</p>
+            <p>999-999-9999</p>
+            <p>dummy@seedsacademy.tokyo</p>
+     </div>
+  </div>
+</div>  
+
+
+
+<div class="contact_box">
+    <h6><a name="contact">CONTACT</h6></a>
+        <p>説明会お申し込み・お問い合わせ</p>   
+    <div class="contact_text">
+        <p>ぜひ1度、足を運んでみませんか。説明会は随時開催中。</p>
+        <p>でも「絶対に」送信ボタン押さないでください。</p>
+    </div>
+
+   
+    <div class="input_form">
+        <p>名前<input type="text" name="name"></p>
+        <p>カナ<input type="text" name="kana"></p>
+        <p><label>メールアドレス</label><input type="email" name="mymail"></p>
+        </div>
+    </div>
+            <div class="checkbox_box">
+        <div class="checkbox_title">
+            <p>志望動機</p>
+        </div>
+        <div class="checkbox_field">
+            <input type="checkbox" name="think">起業したい
+            <p><input type="checkbox" name="think">自分のアイデアを形にしたい</p>
+            <p><input type="checkbox" name="think">自分のアイデアを話したい</p>
+            <p><input type="checkbox" name="think">お金さえあればなんとかなる</p>
+        </div>
+        </div>
+        <div class="syousai">
+        <p>詳細<input type="text" name="concrete"></p>
+        </div>
+        <div class="button">
+        <button type="button" onclick="cilckEvent()">送信</button>
+        </div>
+    
+    
+
+<div class="cr">  
+    <p>copyrights 1996-2023 Seeds Academy hakata All RIghts Reserved.
+    </p>
+</div>
+<a class="pagetop" href="#"><div class="pagetop__arrow"></div></a>
+</body>
+<script>
+    function cilckEvent(){
+        alert("だから押すなって言ったじゃん");
+    }
+</script>
+
+</html>
